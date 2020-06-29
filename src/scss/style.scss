@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.container {
+
+  margin: 0 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  padding-top: 15px;
+  font-size: 20px;
+
+
+  .logo img {
+    width: 10em;
+    height: 5em;
+  }
+
+  .location {
+    text-align: center;
+    align-items: center;
+
+    i {
+      margin-right: 10px;
+    }
+
+  }
+
+  .contacts {
+    text-align: left;
+
+    p {
+      margin: 4px 0 7px 0;
+    }
+
+    .phone, .viber, .telegram {
+      align-items: center;
+      cursor: pointer;
+
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+// Home Start
+.home {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+
+  .content {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 100;
+    opacity: 0;
+    animation: cont 15s forwards;
+    animation-delay: 3s;
+
+    p {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 22px;
+      font-size: 23px;
+    }
+  }
+}
+
+@keyframes cont {
+  100% {
+    opacity: 1;
+  }
+}
+
+.home:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  animation: mask 3s forwards;
+
+}
+
+@keyframes mask {
+  100% {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.home img {
+  animation: img 10s forwards;
+  transform-origin: left top;
+}
+
+@keyframes img {
+  100% {
+    transform: scale(1.7);
+  }
+}
+
+// Home end
+
+// example start
+
+.example {
+  background: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 50px;
+
+  .title {
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 25px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  &__works {
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .work {
+      display: inline-block;
+      width: 20%;
+      min-width: 250px;
+      margin-left: 10px;
+      padding: 15px;
+      margin-bottom: 30px;
+      border: 2px solid #000000;
+      cursor: pointer;
+      text-align: center;
+      box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.71);
+
+      &:hover {
+        box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.71);
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+      }
+
+      &__content {
+        h6 {
+          font-size: 20px;
+          padding: 15px;
+        }
+
+        .tvrcena {
+          padding-left: 5px;
+          color: #5aff3c;
+        }
+      }
+    }
+  }
+
+  &__info {
+
+    align-items: center;
+    max-width: 450px;
+    margin: 30px auto;
+    border-left: 8px solid #dddddd;
+
+    i {
+      font-size: 58px;
+      opacity: 0.3;
+      padding: 20px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 26px;
+    }
+  }
+}
+
+// example end
+
+//choose start
+.choose {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+
+  &__blocks {
+    color: #000000;
+    font-weight: 500;
+    justify-content: space-between;
+    &-block {
+      cursor: pointer;
+      width: 15%;
+      p{
+        padding: 15px 0 ;
+      }
+      span{
+        display: none;
+      }
+      &:hover{
+        img{
+          animation: choose-icon 3s infinite;
+        }
+        span{
+          display: block;
+          animation: choose-text 3s infinite;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .title {
+    padding-bottom: 55px;
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 14px;
+    line-height: 120%;
+    color: #888888;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+}
+@keyframes choose-icon {
+  from {
+    transform: scale(1) rotateY(0deg);
+  }
+  to{transform: scale(1) rotateY(360deg) }
+}
+@keyframes choose-text {
+ 100%{
+   opacity: 1;
+ }
+}
+
+//choose end
