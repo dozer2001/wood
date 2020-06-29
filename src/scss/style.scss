@@ -204,7 +204,7 @@ a {
 //choose start
 .choose {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   margin-top: 40px;
 
   &__blocks {
@@ -214,6 +214,7 @@ a {
     &-block {
       cursor: pointer;
       width: 15%;
+      min-height: 201px;
       p{
         padding: 15px 0 ;
       }
