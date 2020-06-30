@@ -19,7 +19,7 @@ function browsersync() { // запускаем сервер
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.min.js', // если есть квери,засовываем в один файл с нашим жс
-        "src/js/script.js",
+        // "src/js/script.js",
     ])
         .pipe(concat('src.min.js'))
         .pipe(uglify())
