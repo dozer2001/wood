@@ -71,41 +71,18 @@ a {
       }
     }
   }
-
-
 }
-
-// Home Start
-.home {
-  width: 100%;
-  max-height: 600px;
-  overflow: hidden;
-  position: relative;
-
-  .content {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    z-index: 100;
-    opacity: 0;
-    animation: cont 15s forwards;
-    animation-delay: 3s;
-
-    p {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 22px;
-      font-size: 23px;
-    }
-  }
-}
-
+//sidebar start
 nav {
   background: white;
-  position: absolute;
-  z-index: 100;
-  left: -50%;
-  animation: top-menu 7s forwards;
-  animation-delay: 3s;
+  box-shadow: 0.6em -0.6em 7px rgba(122,122,122,.71);
+  position: sticky;
+  max-width: 521px;
+  top: 0;
+  z-index: 150;
+  left: 0;
+  animation: top-menu 6s forwards;
+
 }
 
 nav ul {
@@ -191,17 +168,46 @@ nav a {
   transform: scale(1);
 }
 
+@keyframes top-menu {
+
+  100%{
+    left: 35%;
+
+  }
+}
+//sidebar end
+// Home Start
+.home {
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+
+  .content {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 100;
+    opacity: 0;
+    animation: cont 15s forwards;
+    animation-delay: 3s;
+
+    p {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 22px;
+      font-size: 23px;
+    }
+  }
+}
+
+
+
 @keyframes cont {
   100% {
     opacity: 1;
   }
 }
 
-@keyframes top-menu {
-  100% {
-    left: 35%;
-  }
-}
 
 .home:after {
   content: '';
