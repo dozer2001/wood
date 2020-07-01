@@ -6,7 +6,7 @@ $('.slider__big').slick({
     slidesToShow: 1,
     adaptiveHeight: true,
     slidesToScroll: 1,
-    fade: true,
+    fade: false,
     asNavFor:'.slider'
 });
 $('.slider').slick({

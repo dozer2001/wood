@@ -53,10 +53,16 @@ body {
   margin-bottom: 50px;
 
   .slider__big {
-margin-bottom: 30px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0.4em 0.4em 36px rgba(122, 122, 122, .71);
+    box-shadow: 0.4em 0.4em 36px rgba(122, 122, 122, .71);
+    padding: 20px 0;
+
     &__content {
       max-width: 300px;
     }
+
     &__item {
       text-align: center;
       justify-content: space-around;
