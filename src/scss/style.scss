@@ -1,3 +1,5 @@
+@import "ourworks";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,15 +14,19 @@ a {
   color: black;
   text-decoration: none;
 }
-.hide{
+
+.hide {
   display: none;
 }
-.show{
+
+.show {
   display: block;
 }
-.red{
+
+.red {
   color: #ff0000;
 }
+
 .d-flex {
   display: flex;
 }
@@ -29,7 +35,6 @@ a {
 
   margin: 0 40px;
 }
-
 
 
 .header {
@@ -100,6 +105,7 @@ a {
     }
   }
 }
+
 nav {
   background: white;
   position: absolute;
@@ -108,27 +114,32 @@ nav {
   animation: top-menu 7s forwards;
   animation-delay: 3s;
 }
+
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 nav a {
   text-decoration: none;
   outline: none;
   display: block;
   transition: .4s ease-in-out;
 }
+
 .topmenu {
   text-align: center;
   padding: 10px 0;
   font-size: 14px;
   color: #000000;
 }
+
 .topmenu > li {
   display: inline-block;
   position: relative;
 }
+
 .topmenu > li:after {
   content: "";
   position: absolute;
@@ -140,17 +151,23 @@ nav a {
   box-shadow: 4px -2px 0 #d2d2d2;
   transform: rotate(30deg);
 }
+
 .topmenu > li:last-child:after {
   background: none;
   box-shadow: none;
 }
+
 .topmenu > li > a {
   padding: 1px 16px;
   font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Exo 2', sans-serif;
 }
-.topmenu li a:hover { color: #c0a97a; }
+
+.topmenu li a:hover {
+  color: #c0a97a;
+}
+
 .submenu {
   position: absolute;
   left: 50%;
@@ -165,6 +182,7 @@ nav a {
   transform: scale(.8);
   transition: .4s ease-in-out;
 }
+
 .submenu li a {
   padding: 10px 0;
   margin: 0 10px;
@@ -173,6 +191,7 @@ nav a {
   color: #484848;
   font-family: 'Kurale', serif;
 }
+
 .topmenu > li:hover .submenu {
   visibility: visible;
   opacity: 1;
@@ -223,9 +242,9 @@ nav a {
 
 // Home end
 
-// example start
+// catalog start
 
-.example {
+.catalog {
   background: #f1f1f1;
   padding-top: 30px;
   padding-bottom: 50px;
@@ -240,67 +259,62 @@ nav a {
     }
   }
 
-  &__works {
+  &__products {
     justify-content: space-between;
     flex-wrap: wrap;
 
-    .work {
+    .product {
+      position: relative;
+      max-width: 250px;
+      max-height: 250px;
       display: inline-block;
-      width: 20%;
-      min-width: 250px;
-      margin-left: 10px;
-      padding: 15px;
-      margin-bottom: 30px;
-      border: 2px solid #000000;
+      margin-right: 1%;
+      margin-bottom: 2%;
+      height: auto;
       cursor: pointer;
-      text-align: center;
-      box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.71);
+      box-shadow: 0.6em 1.4em 7px rgba(122, 122, 122, .71);
 
       &:hover {
-        box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.71);
         transform: scale(1.1);
+        transition-duration: .7s;
       }
 
       img {
         width: 100%;
-        max-width: 350px;
         height: auto;
+
       }
 
       &__content {
-        h6 {
-          font-size: 20px;
-          padding: 15px;
-        }
-
-        .tvrcena {
-          padding-left: 5px;
-          color: #5aff3c;
-        }
+        position: absolute;
+        font-size: 27px;
+        color: #fff;
+        bottom: 10px;
+        left: 10px;
       }
     }
   }
 
-  &__info {
 
-    align-items: center;
-    max-width: 450px;
-    margin: 30px auto;
-    border-left: 8px solid #dddddd;
+}
+.info {
 
-    i {
-      font-size: 58px;
-      opacity: 0.3;
-      padding: 20px;
-    }
+  align-items: center;
+  max-width: 450px;
+  margin: 30px auto;
+  border-left: 8px solid #dddddd;
 
-    p {
-      font-size: 15px;
-      line-height: 26px;
-    }
+  i {
+    font-size: 58px;
+    opacity: 0.3;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 26px;
   }
 }
-
 // example end
 
 //choose start
@@ -373,34 +387,39 @@ nav a {
 //choose end
 
 //map start
-.map{
-  &__content{
+.map {
+  &__content {
     max-width: 1200px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
   }
-  &__right{
+
+  &__right {
     padding-left: 157px;
     align-items: center;
 
   }
 }
-.forma strong{
+
+.forma strong {
   font-size: 26px;
 }
-.form{
+
+.form {
   font-size: 18px;
   padding-bottom: 22px;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  box-shadow: 0.4em 0.4em 36px rgba(122,122,122,.71);
+  box-shadow: 0.4em 0.4em 36px rgba(122, 122, 122, .71);
 }
-.form p{
+
+.form p {
   margin: 20px 0 20px 0;
 }
-.inpt{
+
+.inpt {
   display: inline-block;
   width: 190px;
   height: 51px;
@@ -411,7 +430,8 @@ nav a {
   background-color: #f7f7f7;
   margin: 0 0 0 0;
 }
-.submitbtn{
+
+.submitbtn {
   display: inline-block;
   width: 225px;
   height: 37px;
@@ -421,10 +441,53 @@ nav a {
   background-size: 225px 74px;
   margin-top: 25px;
   background-color: #f93030;
-  box-shadow: 0.4em 0.4em 5px rgba(122,122,122,.71);
+  box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, .71);
 }
-.submitbtn:focus{
+
+.submitbtn:focus {
   transform: scale(1.1);
   border: none;
 }
+
 //map end
+
+//&__works {
+//  justify-content: space-between;
+//  flex-wrap: wrap;
+//
+//  .work {
+//    display: inline-block;
+//    width: 20%;
+//    min-width: 250px;
+//    margin-left: 10px;
+//    padding: 15px;
+//    margin-bottom: 30px;
+//
+//    cursor: pointer;
+//    text-align: center;
+//    box-shadow: 0.6em 1.4em 7px rgba(122,122,122,.71);
+//
+//    &:hover {
+//      transform: scale(1.1);
+//      transition-duration: .7s;
+//    }
+//
+//    img {
+//      width: 100%;
+//      max-width: 350px;
+//      height: auto;
+//    }
+//
+//    &__content {
+//      h6 {
+//        font-size: 20px;
+//        padding: 15px;
+//      }
+//
+//      .tvrcena {
+//        padding-left: 5px;
+//        color: #5aff3c;
+//      }
+//    }
+//  }
+//}
