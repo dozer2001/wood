@@ -1,5 +1,9 @@
 @import "ourworks";
 
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,16 +19,18 @@ a {
   text-decoration: none;
 }
 
-.show{
+.show {
   display: block !important;
 }
 
 .red {
   color: #ff0000;
 }
-.green{
+
+.green {
   color: #008000;
 }
+
 .d-flex {
   display: flex;
 }
@@ -36,8 +42,14 @@ a {
 
 
 .header {
+  position: sticky;
+  top: 0;
   padding-top: 15px;
   font-size: 20px;
+  z-index: 140;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
 
   &__navigation {
     justify-content: space-around;
@@ -51,6 +63,7 @@ a {
   }
 
   .location {
+    order: 3;
     text-align: center;
     align-items: center;
 
@@ -62,6 +75,7 @@ a {
 
   .contacts {
     text-align: left;
+    order: 4;
 
     p {
       margin: 4px 0 7px 0;
@@ -77,17 +91,18 @@ a {
     }
   }
 }
+
 //sidebar start
+
+.sidebar {
+  order: 2;
+}
+
 nav {
   background: white;
-  box-shadow: 0.6em -0.6em 7px rgba(122,122,122,.71);
-  position: sticky;
+  box-shadow: 0.3em 0.3em 9px rgba(122, 122, 122, .71);
   max-width: 521px;
-  top: 0;
   z-index: 150;
-  left: 0;
-  animation: top-menu 6s forwards;
-
 }
 
 nav ul {
@@ -146,7 +161,7 @@ nav a {
 .submenu {
   position: absolute;
   left: 50%;
-  top: 143%;
+  top: 118%;
   width: 210px;
   margin-left: -105px;
   background: #fafafa;
@@ -173,13 +188,6 @@ nav a {
   transform: scale(1);
 }
 
-@keyframes top-menu {
-
-  100%{
-    left: 35%;
-
-  }
-}
 //sidebar end
 // Home Start
 .home {
@@ -204,7 +212,6 @@ nav a {
     }
   }
 }
-
 
 
 @keyframes cont {
@@ -268,6 +275,7 @@ nav a {
     flex-wrap: wrap;
 
     .product {
+
       position: relative;
       max-width: 250px;
       max-height: 250px;
@@ -277,6 +285,12 @@ nav a {
       height: auto;
       cursor: pointer;
       box-shadow: 0.6em 1.4em 7px rgba(122, 122, 122, .71);
+      transition: all 2s ease;
+
+      a {
+        display: block;
+        font-size: 0;
+      }
 
       &:hover {
         transform: scale(1.1);
@@ -301,6 +315,7 @@ nav a {
 
 
 }
+
 .info {
 
   align-items: center;
@@ -319,6 +334,7 @@ nav a {
     line-height: 26px;
   }
 }
+
 // example end
 
 //choose start
@@ -393,6 +409,7 @@ nav a {
 //map start
 .map {
   margin-bottom: 40px;
+
   &__content {
     max-width: 1200px;
     display: flex;
@@ -407,11 +424,16 @@ nav a {
   }
 }
 
+.gr {
+  background: #f9f8f0;
+}
+
 .forma strong {
   font-size: 26px;
 }
 
 .form {
+  margin-top: 20px;
   font-size: 18px;
   padding-bottom: 22px;
   flex-direction: column;
@@ -457,41 +479,56 @@ nav a {
 //map end
 
 //card start
-.card{
+.card {
   margin: 40px 0;
-  &__container{
+
+  .cena {
+    color: green;
+    font-weight: 700;
+  }
+
+  &__container {
     max-width: 1200px;
     margin: 0 auto;
   }
-  &__top{
+
+  &__top {
     justify-content: center;
     margin-bottom: 50px;
-    &-content{
+
+    &-content {
       margin-left: 6em;
-      &__title{
+
+      &__title {
         padding-bottom: 20px;
-        h2{
+
+        h2 {
           padding-bottom: 10px;
         }
-        p{
+
+        p {
           font-size: 20px;
           font-weight: 700;
         }
       }
-      &-akcii{
+
+      &-akcii {
         flex-direction: column;
         text-align: center;
-        .stocks{
+
+        .stocks {
           align-items: center;
           background: #f7f7ee;
           font-size: 18px;
           margin-bottom: 10px;
           border: 5px solid #f1f1e4;
         }
-        i{
+
+        i {
           color: green;
         }
-        p{
+
+        p {
           font-size: 20px;
           padding-left: 20px;
 
@@ -499,10 +536,12 @@ nav a {
       }
     }
   }
-  &__mid{
+
+  &__mid {
     border-left: 8px solid #ddd;
     align-items: center;
-    i{
+
+    i {
       font-size: 100px;
 
       text-align: center;
@@ -510,36 +549,54 @@ nav a {
       opacity: .3;
       padding-left: 30px;
     }
-    &-content{
+
+    &-content {
       padding-left: 30px;
-      p{
+
+      p {
         font-size: 20px;
         margin-bottom: 30px;
       }
     }
 
   }
-  &__categorii{
+
+  &__categorii {
     margin: 20px 0;
   }
-  &__categor{
-    display: block;
+
+  &__categor {
     padding: 15px 20px 17px 22px;
     background: #efefef;
     margin-bottom: 15px;
     font-weight: 300;
-    font-size:18px;
+    font-size: 14px;
     cursor: pointer;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      padding-right: 15px;
+    }
+
+    i {
+      opacity: 0.3;
+      margin-top: 5px;
+    }
   }
-  &__table{
+
+  &__table {
     margin: 50px 0;
-    &-title{
+
+    &-title {
       text-align: center;
       margin-bottom: 25px;
-      h2{
+
+      h2 {
         padding-bottom: 7px;
       }
-      strong{
+
+      strong {
         border-left: 6px solid #dddddd;
         padding: 7px 10px 7px 20px;
         font-size: 18px;
@@ -549,24 +606,30 @@ nav a {
         display: inline-block;
       }
     }
-    .tceni{
+
+    .tceni {
       margin: 0 auto;
+      box-shadow: 0.8em -0.7em 26px rgba(122, 122, 122, .71);
     }
-    th{
+
+    th {
 
       width: 14%;
     }
-    tr{
+
+    tr {
       margin-bottom: 15px;
       font-size: 20px;
       text-align: center;
       border: 1px solid black;
 
     }
-    td{
-      p{
+
+    td {
+      p {
         margin-top: 5px;
       }
+
       min-width: 10%;
       text-align: center;
       padding: 20px 0;
@@ -577,50 +640,153 @@ nav a {
 
 //card end
 
+.lestnici {
+  .title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-.vagonka{
-  display: none;
+  h6 {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .cards {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    display: inline-block;
+    width: 20%;
+    min-width: 250px;
+    margin: 32px 21px;
+    padding-bottom: 27px;
+
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0.6em 1.4em 7px rgba(122, 122, 122, .71);
+    transition: all 2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: .7s;
+    }
+
+    .tr {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+    }
+
+    strong {
+      font-weight: 500;
+      color: #000000;
+    }
+
+    &-cena {
+      font-weight: 600;
+      color: #4d8d14;
+    }
+  }
+
+
+}
+
+// крепеж и малсо
+.krepej_maslo {
+  .card__top {
+    &__title {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    &-content {
+
+      &-akcii {
+        font-size: 18px;
+        color: #444444;
+        font-weight: 300;
+        line-height: 160%;
+        text-align: left;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+// крепеж и малсо
+
+
+//все для бани
+.banya {
+  .card {
+    &__top {
+      &-content {
+        &__title {
+          text-align: center;
+        }
+
+        &-akcii {
+          text-align: left;
+
+          p {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    &__products{
+      justify-content: space-around;
+    }
+    &__product{
+      border: 2px solid #eeeeee;
+      padding-bottom: 10px;
+      text-align: center;
+      width:24%;
+      img{
+        width: 100%;
+      }
+      strong{
+        padding-right: 10px;
+      }
+    }
+    &-cena{
+      font-weight: 600;
+      color: #4d8d14;
+    }
+    &__sort{
+      margin: 15px;
+      display: block;
+      background-color: #e6e4e4;
+      border: 2px solid #eeeeee;
+      padding: 5px 10px 5px 10px;
+      text-align: center;
+      font-size: 14px;
+      i{
+        margin-right: 10px;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+    &__bigh6{
+      text-align: center;
+      font-size:20px;
+      padding: 15px 0 7px 0;
+    }
+    &__smallh6{
+      font-size: 15px;
+      color: #666666;
+      font-weight: normal;
+      line-height: 90%;
+      margin-top: 0 ;
+      margin-bottom: 12px ;
+    }
+  }
 }
 
 
-
-//&__works {
-//  justify-content: space-between;
-//  flex-wrap: wrap;
-//
-//  .work {
-//    display: inline-block;
-//    width: 20%;
-//    min-width: 250px;
-//    margin-left: 10px;
-//    padding: 15px;
-//    margin-bottom: 30px;
-//
-//    cursor: pointer;
-//    text-align: center;
-//    box-shadow: 0.6em 1.4em 7px rgba(122,122,122,.71);
-//
-//    &:hover {
-//      transform: scale(1.1);
-//      transition-duration: .7s;
-//    }
-//
-//    img {
-//      width: 100%;
-//      max-width: 350px;
-//      height: auto;
-//    }
-//
-//    &__content {
-//      h6 {
-//        font-size: 20px;
-//        padding: 15px;
-//      }
-//
-//      .tvrcena {
-//        padding-left: 5px;
-//        color: #5aff3c;
-//      }
-//    }
-//  }
-//}
+//все для бани
