@@ -1,7 +1,7 @@
 @import "ourworks";
 
 body {
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   background-color: #f1f1f1;
 }
 
@@ -198,6 +198,12 @@ nav a {
   max-height: 600px;
   overflow: hidden;
   position: relative;
+   img {
+     width: 100%;
+      animation: img 10s forwards;
+      transform-origin: bottom center;
+     transform: scale(1.7);
+    }
 
   .content {
     position: absolute;
@@ -214,6 +220,19 @@ nav a {
       font-size: 23px;
     }
   }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    animation: mask 3s forwards;
+
+  }
+
 }
 
 
@@ -224,18 +243,6 @@ nav a {
 }
 
 
-.home:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 1);
-  animation: mask 3s forwards;
-
-}
 
 @keyframes mask {
   100% {
@@ -243,14 +250,10 @@ nav a {
   }
 }
 
-.home img {
-  animation: img 10s forwards;
-  transform-origin: left top;
-}
 
 @keyframes img {
   100% {
-    transform: scale(1.7);
+    transform: scale(1);
   }
 }
 
