@@ -201,8 +201,7 @@ nav a {
    img {
      width: 100%;
       animation: img 10s forwards;
-      transform-origin: bottom center;
-     transform: scale(1.7);
+      transform-origin: center center;
     }
 
   .content {
@@ -253,7 +252,7 @@ nav a {
 
 @keyframes img {
   100% {
-    transform: scale(1);
+    transform: scale(1.7);
   }
 }
 
