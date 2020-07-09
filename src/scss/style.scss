@@ -24,6 +24,10 @@ a {
   display: block !important;
 }
 
+.hide{
+  display: none;
+}
+
 .red {
   color: #ff0000;
 }
@@ -190,7 +194,85 @@ nav a {
   opacity: 1;
   transform: scale(1);
 }
+.menu {
+  cursor: pointer;
+  padding-left: 1.25em;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  display: none;
+}
+.menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 7px solid  #000000;
+  width: 100%;
+  transition: 0.55s;
+}
+.menu-top {
+  top: 0;
+}
+.menu-middle {
+  top: 10px;
+}
+.menu-bottom {
+  top: 20px;
+}
+.menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.55s 0.5s;
+}
+.menu-middle-click {
+  opacity: 0;
+}
+.menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.55s 0.5s;
+}
 
+@media screen and (max-width: 1060px) {
+  .menu{
+    display: block;
+    order: 5;
+  }
+  .sidebar{
+    display: none;
+    position: absolute;
+    bottom: -154%;
+    right: 10%;
+  }
+  .submenu{
+    display: none;
+  }
+  .topmenu>li{
+    display: block;
+    padding-bottom: 10px;
+  }
+  .header{
+    font-size: 17px;
+    .location{
+      order: unset;
+      max-width: 200px;
+    }
+  }
+}
+@media screen and (max-width: 690px) {
+  .header{
+    .location{
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .header{
+
+  }
+}
 //sidebar end
 // Home Start
 .home {
