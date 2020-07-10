@@ -450,7 +450,8 @@ nav a {
   &__blocks {
     color: #000000;
     font-weight: 500;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     &-block {
       cursor: pointer;
@@ -505,6 +506,21 @@ nav a {
 @keyframes choose-text {
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .choose__blocks-block {
+    width: 26%;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .choose {
+    margin-bottom: 30px;
+    &__blocks-block {
+      width: 50%;
+    }
   }
 }
 
@@ -585,13 +601,15 @@ nav a {
     display: none;
   }
 }
+
 @media screen and (max-width: 555px) {
 
-  .map__left{
+  .map__left {
     width: 100%;
     margin: auto
   }
 }
+
 //map end
 
 //card start
@@ -958,6 +976,7 @@ nav a {
   &__center {
     min-width: 550px;
     margin: 0 30px;
+
     &-title {
       text-align: center;
       font-size: 20px;
@@ -1031,38 +1050,47 @@ nav a {
 
   }
 }
+
 @media screen and (max-width: 1115px) {
-  .footer{
-    &__right{
+  .footer {
+    &__right {
       margin-top: 30px;
     }
-    &__center{
+
+    &__center {
       margin-top: 25px;
       order: 4;
     }
   }
 }
+
 @media screen and (max-width: 575px) {
-  .footer{
+  .footer {
     text-align: center;
     padding: 20px 15px;
-    &__center{
+
+    &__center {
       text-align: center;
       min-width: auto;
-      &-menu{
+
+      &-menu {
         height: auto;
         width: auto;
-        li{
+
+        li {
           padding: 5px 0;
         }
       }
     }
-    .location{
+
+    .location {
       text-align: center;
     }
-    .contacts{
+
+    .contacts {
       align-items: center;
     }
   }
 }
+
 // footer
