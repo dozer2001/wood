@@ -314,7 +314,23 @@ nav a {
     padding: 22px;
     font-size: 23px;
     color: #ffffff;
+    &__list{
+      position: relative;
+    }
+    &__btn {
+      font-size: 20px;
+      padding: 5px 24px;
+      border: 1px solid black;
+      box-shadow: 0.2em 0.2em 0 rgba(122, 122, 122, .71);
+      position: absolute;
+      right: 3%;
+      bottom: 3%;
+      cursor: pointer;
 
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
     li {
       padding-top: 10px;
 
@@ -368,26 +384,14 @@ nav a {
   background-color: #ffffff;
 
   .catalog__products {
+    padding-top: 40px;
    .product{
      min-width: 20%;
      &__content{
        position: absolute;
        bottom: 2em;
      }
-     &-btn {
-       font-size: 20px;
-       padding: 5px 24px;
-       border: 1px solid black;
-       box-shadow: 0.2em 0.2em 0 rgba(122, 122, 122, .71);
-       position: absolute;
-       right: 3%;
-       bottom: 3%;
-       cursor: pointer;
 
-       &:hover {
-         transform: scale(1.1);
-       }
-     }
    }
 
   }
