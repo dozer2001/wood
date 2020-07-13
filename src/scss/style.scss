@@ -81,6 +81,7 @@ a {
   .contacts {
     text-align: left;
     order: 4;
+    font-size: 25px;
 
     a {
       align-items: center;
@@ -304,16 +305,22 @@ nav a {
   .content {
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 25%;
     z-index: 100;
     opacity: 0;
     animation: cont 15s forwards;
     animation-delay: 3s;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 22px;
+    font-size: 23px;
+    color: #ffffff;
 
-    p {
-      background: rgba(255, 255, 255, 0.2);
-      padding: 22px;
-      font-size: 23px;
+    li {
+      padding-top: 10px;
+
+      i {
+        padding-right: 10px;
+      }
     }
   }
 
@@ -355,6 +362,40 @@ nav a {
 
 // Home end
 
+//best start
+.best {
+  margin-top: 40px;
+  background-color: #ffffff;
+
+  .catalog__products {
+   .product{
+     width: 20%;
+     &__content{
+       position: absolute;
+       bottom: 2em;
+     }
+     &-btn {
+       font-size: 20px;
+       padding: 5px 24px;
+       border: 1px solid black;
+       box-shadow: 0.2em 0.2em 0 rgba(122, 122, 122, .71);
+       position: absolute;
+       right: 3%;
+       bottom: 3%;
+       cursor: pointer;
+
+       &:hover {
+         transform: scale(1.1);
+       }
+     }
+   }
+
+  }
+}
+
+
+//best end
+
 // catalog start
 
 .catalog {
@@ -373,17 +414,16 @@ nav a {
   }
 
   &__products {
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     .product {
 
       position: relative;
-      max-width: 250px;
-      max-height: 250px;
+      width: 25%;
       display: inline-block;
       margin-right: 1%;
-      margin-bottom: 2%;
+      margin-bottom: 4%;
       height: auto;
       cursor: pointer;
       box-shadow: 0.6em 1.4em 7px rgba(122, 122, 122, .71);
@@ -518,6 +558,7 @@ nav a {
 @media screen and (max-width: 445px) {
   .choose {
     margin-bottom: 30px;
+
     &__blocks-block {
       width: 50%;
     }
