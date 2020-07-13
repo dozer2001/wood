@@ -369,7 +369,7 @@ nav a {
 
   .catalog__products {
    .product{
-     width: 20%;
+     min-width: 20%;
      &__content{
        position: absolute;
        bottom: 2em;
@@ -420,7 +420,7 @@ nav a {
     .product {
 
       position: relative;
-      width: 25%;
+      min-width: 25%;
       display: inline-block;
       margin-right: 1%;
       margin-bottom: 4%;
