@@ -41,10 +41,13 @@ a {
 }
 
 .container {
-
   margin: 0 40px;
 }
-
+@media screen and (max-width: 1060px) {
+ .container{
+   margin: 0 auto;
+ }
+}
 // header start
 .header {
   position: sticky;
