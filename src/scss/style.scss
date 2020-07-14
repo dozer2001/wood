@@ -43,11 +43,13 @@ a {
 .container {
   margin: 0 40px;
 }
+
 @media screen and (max-width: 1060px) {
- .container{
-   margin: 0 auto;
- }
+  .container {
+    margin: 0 auto;
+  }
 }
+
 // header start
 .header {
   position: sticky;
@@ -474,13 +476,16 @@ nav a {
 
   }
 }
+
 @media screen and (max-width: 590px) {
-  .best{
+  .best {
     margin-top: 0px;
-    .catalog__products{
-      .product{
+
+    .catalog__products {
+      .product {
         width: 140px;
-        &__content{
+
+        &__content {
           font-size: 15px;
           bottom: 1em;
         }
@@ -572,24 +577,28 @@ nav a {
     line-height: 26px;
   }
 }
+
 @media screen and (max-width: 590px) {
-  .catalog{
+  .catalog {
     padding-bottom: 0;
-    .title{
+
+    .title {
       font-size: 22px;
     }
-    .catalog__products{
-      .product{
-        width: 140px;
-        &__content{
+
+    .catalog__products {
+        .product {
+          width: 140px;
+
+        &__content {
           font-size: 15px;
           bottom: 1em;
         }
       }
     }
-
   }
 }
+
 // catalog end
 
 //choose start
