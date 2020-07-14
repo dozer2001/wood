@@ -45,7 +45,7 @@ a {
   margin: 0 40px;
 }
 
-
+// header start
 .header {
   position: sticky;
   top: 0;
@@ -101,6 +101,10 @@ a {
     }
   }
 }
+
+
+// header end
+
 
 //sidebar start
 
@@ -247,15 +251,21 @@ nav a {
 }
 
 @media screen and (max-width: 1060px) {
+  nav {
+    max-width: 100%;
+  }
   .menu {
     display: block;
     order: 5;
   }
+
   .sidebar {
     display: none;
     position: absolute;
-    bottom: -154%;
-    right: 10%;
+    bottom: -140%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .9);
   }
   .submenu {
     display: none;
@@ -314,9 +324,11 @@ nav a {
     padding: 22px;
     font-size: 23px;
     color: #ffffff;
-    &__list{
+
+    &__list {
       position: relative;
     }
+
     &__btn {
       font-size: 20px;
       padding: 5px 24px;
@@ -331,6 +343,7 @@ nav a {
         transform: scale(1.1);
       }
     }
+
     li {
       padding-top: 10px;
 
@@ -376,6 +389,66 @@ nav a {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .home {
+    .content {
+      left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    .content {
+      left: 1%;
+      right: 1%;
+      bottom: 2%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home {
+    img {
+      display: none;
+    }
+
+    .content {
+      position: relative;
+      color: black;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .home {
+
+    .content {
+      text-align: center;
+      color: black;
+
+      h1 {
+        font-size: 20px;
+      }
+
+      &__list {
+        font-size: 15px;
+        text-align: left;
+      }
+
+      &__btn {
+        position: relative;
+        margin-top: 15px;
+      }
+    }
+
+  }
+}
+
 // Home end
 
 //best start
@@ -385,18 +458,33 @@ nav a {
 
   .catalog__products {
     padding-top: 40px;
-   .product{
-     min-width: 20%;
-     &__content{
-       position: absolute;
-       bottom: 2em;
-     }
 
-   }
+    .product {
+      min-width: 20%;
+
+      &__content {
+        position: absolute;
+        bottom: 2em;
+      }
+
+    }
 
   }
 }
+@media screen and (max-width: 590px) {
+  .best{
+    .catalog__products{
+      .product{
+        width: 119px;
+        &__content{
+          font-size: 15px;
+          bottom: 1em;
+        }
+      }
+    }
 
+  }
+}
 
 //best end
 
@@ -480,8 +568,25 @@ nav a {
     line-height: 26px;
   }
 }
+@media screen and (max-width: 590px) {
+  .catalog{
+    padding-bottom: 0;
+    .title{
+      font-size: 22px;
+    }
+    .catalog__products{
+      .product{
+        width: 119px;
+        &__content{
+          font-size: 15px;
+          bottom: 1em;
+        }
+      }
+    }
 
-// example end
+  }
+}
+// catalog end
 
 //choose start
 .choose {
