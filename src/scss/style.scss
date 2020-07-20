@@ -196,7 +196,7 @@ nav a {
   padding: 10px 0;
   margin: 0 10px;
   border-bottom: 1px solid #efefef;
-  font-size: 12px;
+  font-size: 15x;
   color: #484848;
   font-family: 'Kurale', serif;
 }
@@ -461,6 +461,11 @@ nav a {
   margin-top: 40px;
   background-color: #ffffff;
 
+  &__title {
+    text-align: center;
+    font-size: 30px;
+  }
+
   .catalog__products {
     padding-top: 40px;
 
@@ -480,6 +485,11 @@ nav a {
 @media screen and (max-width: 590px) {
   .best {
     margin-top: 0px;
+
+    &__title {
+      text-align: center;
+      font-size: 21px;
+    }
 
     .catalog__products {
       .product {
@@ -587,8 +597,8 @@ nav a {
     }
 
     .catalog__products {
-        .product {
-          width: 140px;
+      .product {
+        width: 140px;
 
         &__content {
           font-size: 15px;
@@ -680,6 +690,10 @@ nav a {
 @media screen and (max-width: 445px) {
   .choose {
     margin-bottom: 30px;
+
+    .title {
+      font-size: 20px;
+    }
 
     &__blocks-block {
       width: 50%;
@@ -935,6 +949,51 @@ nav a {
   }
 }
 
+@media screen and (max-width: 590px) {
+  .card {
+    &__container {
+      width: 96%;
+    }
+
+    &__top {
+
+      align-items: center;
+      flex-direction: column;
+
+      &-content {
+        margin: 0 28px;
+
+        &-akcii {
+          font-size: 15px;
+
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    &__mid-content {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .card__table-title {
+    h2 {
+      font-size: 18px;
+    }
+
+    strong {
+      font-size: 12px;
+    }
+  }
+  .card__table tr {
+    font-size: 13px;
+  }
+}
+
+
 //card end
 
 .lestnici {
@@ -987,9 +1046,8 @@ nav a {
       color: #4d8d14;
     }
   }
-
-
 }
+
 
 // крепеж и малсо
 .krepej_maslo {
@@ -1093,6 +1151,21 @@ nav a {
       margin-bottom: 12px;
     }
   }
+}
+
+@media screen and (max-width: 590px) {
+  .banya{
+    .card {
+      &__products {
+
+        flex-wrap: wrap;
+      }
+      &__product{
+        width: 99%;
+      }
+    }
+  }
+
 }
 
 //все для бани
@@ -1257,3 +1330,43 @@ nav a {
 }
 
 // footer
+//phone_puls
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.pulse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  color: red;
+  background: red;
+  border-radius: 50%;
+  animation: radial-pulse 1s infinite;
+  a{
+    font-size: 35px;
+    color: white;
+  }
+}
+
+.wrapper {
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  cursor: pointer;
+}
+
+@keyframes radial-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 40px rgba(0, 0, 0, 0);
+  }
+}
+//phone_puls
