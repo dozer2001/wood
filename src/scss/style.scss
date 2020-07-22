@@ -736,7 +736,7 @@ nav a {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  box-shadow: 0.4em 0.4em 36px rgba(122, 122, 122, .71);
+
 }
 
 .form p {
@@ -1370,3 +1370,117 @@ nav a {
   }
 }
 //phone_puls
+.popup-content {
+  position: fixed;
+  text-align: center;
+  max-width: 35rem;
+  left: 50%;
+  top: 20%;
+  background-color: #ededed;
+  border-radius: 4px;
+  transform: translateX(-50%) !important;
+  padding: 4rem 6rem 5rem 6rem;
+}
+.popup-close {
+  position: absolute;
+  top: -5rem;
+  right: -2.5rem;
+  font-size: 4rem;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+}
+
+.popup-design {
+  z-index: 1000;
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  /* Making it beautiful */
+
+}
+.popup-design input[name="name"] {
+  margin-top: 2rem;
+}
+
+.popup-design .form {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.popup-design .form input,
+.popup-design .form textarea {
+  border: none;
+  border-radius: 50px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  color: inherit;
+  resize: none;
+}
+.popup-design .form input::placeholder,
+.popup-design .form textarea::placeholder {
+  color: black;
+  text-align: center;
+  font-family: 'Circe Bold', sans-serif;
+}
+.popup-design .button-order {
+  width: 250px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #d81535;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  color: inherit;
+  resize: none;
+  cursor: pointer;
+}
+
+.popup-content {
+  position: fixed;
+  text-align: center;
+  max-width: 31rem;
+  left: 50%;
+  top: 10%;
+  background-color: #ededed;
+  border-radius: 4px;
+  transform: translateX(-50%) !important;
+  padding: 1rem 1rem 2rem 1rem;
+
+}
+@media (max-width: 1399px) {
+  .paints {
+    display: none;
+  }
+  .calc .file_upload > div {
+    display: none;
+  }
+  .calc .file_upload > button {
+    width: 100%;
+  }
+  .popup-design .file_uploa > div {
+    display: none;
+  }
+  .popup-design .file_uploa > button {
+    width: 100%;
+  }
+  .main .file_uplo > div {
+    display: none;
+  }
+  .main .file_uplo > button {
+    width: 100%;
+  }
+}
