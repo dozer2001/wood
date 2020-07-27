@@ -18,6 +18,16 @@ $('.slider').slick({
     slidesToScroll: 1,
     asNavFor:'.slider__big'
 });
+$('.slider__potolok').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 2,
+    adaptiveHeight: true,
+    slidesToScroll: 1,
+    fade: false,
+});
 
 
 
