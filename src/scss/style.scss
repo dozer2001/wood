@@ -1598,3 +1598,120 @@ nav a {
 }
 
 //potolki end
+
+//mebel start
+.mebel{
+  margin: 25px 0;
+  &__content{
+    &-title{
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 25px;
+      color: green;
+    }
+    font-size: 23px;
+    ul {
+      text-align: center;
+      margin: 15px 0;
+
+      li {
+        text-align: left;
+        margin-top: 10px;
+        list-style-type: initial;
+      }
+    }
+    &-img{
+      text-align: center;
+      margin-bottom: 18px;
+    }
+  }
+  .content-clients{
+    font-weight: 700;
+  }
+  h4{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .slider__potolok {
+
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .slick-active {
+        button {
+          background-color: #000000;
+          border: 1px solid #ffffff;
+
+        }
+      }
+
+      li {
+        list-style-type: none;
+        margin: 0 10px;
+        color: #ffffff;
+
+        button {
+          font-size: 0;
+          width: 10px;
+          height: 10px;
+          background-color: #ffffff;
+          border-radius: 50%;
+        }
+
+      }
+
+    }
+
+    .slick-active {
+      border: none;
+
+    }
+
+    &__item {
+      width: 100px;
+      text-align: center;
+
+      img {
+        max-width: 99%;
+      }
+    }
+
+    .slick-slide {
+      padding-left: 15px;
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .mebel {
+    .container {
+      width: 90%;
+    }
+    &__content-img{
+      img{
+        width: 83%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .mebel {
+    &__content{
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 510px) {
+  .mebel {
+    &__content{
+      &-title{
+        font-size: 15px;
+      }
+    }
+  }
+}
+//mebel end
