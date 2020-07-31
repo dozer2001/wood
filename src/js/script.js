@@ -23,7 +23,7 @@ $('.slider__potolok').slick({
     arrows: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 2,
+    slidesToShow: 1,
     adaptiveHeight: true,
     slidesToScroll: 1,
     fade: false,

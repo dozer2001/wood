@@ -314,7 +314,7 @@ nav a {
   img {
     width: 100%;
     animation: img 10s forwards;
-    transform-origin: center center;
+    transform-origin: bottom center;
   }
 
   .content {
@@ -421,6 +421,7 @@ nav a {
     .content {
       position: relative;
       color: black;
+      animation: cont 10s forwards;
     }
 
     &::after {
@@ -806,7 +807,10 @@ nav a {
   &__top {
     justify-content: center;
     margin-bottom: 50px;
-
+    img{
+      max-width: 270px;
+      height: 243px;
+    }
     &-content {
       margin-left: 6em;
 
@@ -1342,15 +1346,15 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   color: red;
-  background: red;
+  background: #00ff1f6b;
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
 
   a {
-    font-size: 35px;
+    font-size: 28px;
     color: white;
   }
 }
@@ -1569,7 +1573,7 @@ nav a {
         text-align: center;
 
         img {
-          max-width: 99%;
+          max-height: 504px;
         }
       }
 
