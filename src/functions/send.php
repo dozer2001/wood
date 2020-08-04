@@ -20,38 +20,8 @@ $phone_number = trim($phone_number);
 //echo $fio;
 //echo "<br>";
 //echo $email;
-if (mail("cto@appsidedev.com", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: cto@appsidedev.com \r\n"))
+if (mail("dozer2001@mail.ru", "Заявка с сайта", "ФИО:".$fio.". E-mail: ".$email ,"From: wood \r\n"))
  {     echo "сообщение успешно отправлено";
 } else {
     echo "при отправке сообщения возникли ошибки";
 }?>
-$('body')
-    .on('submit', 'form', function(e) {
-        e.preventDefault();
-        $('input[type=submit]').prop('disabled', true)
-
-        var form = $(this)[0],
-            data = new FormData(form);
-            var full_url = window.location.href;
-            data.append('full_url', full_url);
-            data.append('type', 'submit');
-            $.ajax({
-                url: 'functions/send.php',
-                method: 'post',
-                data: data,
-                dataType: 'json',
-                processData: false,
-                contentType: false,
-                cache: false,
-                success: function(response) {
-                    if (response.SUCCESS) {
-                        window.location.href = 'thanks.php';
-                    } else {
-                        console.error(response.MESSAGE);
-                    }
-                },
-                error: function(response) {
-                    console.error(response.responseText);
-                }
-            });
-        })

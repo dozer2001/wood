@@ -47,6 +47,7 @@ a {
 @media screen and (max-width: 1060px) {
   .container {
     margin: 0 auto;
+    width: 95%;
   }
 }
 
@@ -407,19 +408,14 @@ nav a {
     .content {
       left: 1%;
       right: 1%;
-      bottom: 2%;
+      top: 1%;
     }
   }
 }
 
 @media screen and (max-width: 700px) {
   .home {
-    img {
-      display: none;
-    }
-
     .content {
-      position: relative;
       color: black;
       animation: cont 10s forwards;
     }
@@ -807,10 +803,12 @@ nav a {
   &__top {
     justify-content: center;
     margin-bottom: 50px;
-    img{
+
+    img {
       max-width: 270px;
       height: 243px;
     }
+
     &-content {
       margin-left: 6em;
 
@@ -1353,7 +1351,7 @@ nav a {
   border-radius: 50%;
   animation: radial-pulse 1s infinite;
 
-  a {
+  i {
     font-size: 28px;
     color: white;
   }
@@ -1401,6 +1399,7 @@ nav a {
   background: transparent;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 .popup-design {
@@ -1466,7 +1465,7 @@ nav a {
   text-align: center;
   max-width: 31rem;
   left: 50%;
-  top: 10%;
+  top: 30%;
   background-color: #ededed;
   border-radius: 4px;
   transform: translateX(-50%) !important;
@@ -1495,6 +1494,21 @@ nav a {
   }
   .main .file_uplo > button {
     width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .popup-content{
+    width: 228px;
+  }
+  .popup-close{
+    font-size: 3rem;
+  }
+  .form{
+    font-size: 15px;
+  }
+  .popup-design .button-order{
+    margin: 0;
+    padding: 0.5rem;
   }
 }
 
@@ -1574,11 +1588,11 @@ nav a {
 
         img {
           max-height: 504px;
+          min-width: 320px;
         }
       }
 
       .slick-slide {
-        padding-left: 15px;
         width: 200px;
       }
     }
@@ -1595,7 +1609,7 @@ nav a {
 
 @media screen and (max-width: 810px) {
   .potolok {
-    &__content{
+    &__content {
       font-size: 14px;
     }
   }
@@ -1604,16 +1618,19 @@ nav a {
 //potolki end
 
 //mebel start
-.mebel{
+.mebel {
   margin: 25px 0;
-  &__content{
-    &-title{
+
+  &__content {
+    &-title {
       text-align: center;
       font-size: 25px;
       margin-bottom: 25px;
       color: green;
     }
+
     font-size: 23px;
+
     ul {
       text-align: center;
       margin: 15px 0;
@@ -1624,18 +1641,22 @@ nav a {
         list-style-type: initial;
       }
     }
-    &-img{
+
+    &-img {
       text-align: center;
       margin-bottom: 18px;
     }
   }
-  .content-clients{
+
+  .content-clients {
     font-weight: 700;
   }
-  h4{
+
+  h4 {
     text-align: center;
     margin-bottom: 15px;
   }
+
   .slider__potolok {
 
     .slick-dots {
@@ -1694,8 +1715,9 @@ nav a {
     .container {
       width: 90%;
     }
-    &__content-img{
-      img{
+
+    &__content-img {
+      img {
         width: 83%;
       }
     }
@@ -1704,18 +1726,93 @@ nav a {
 
 @media screen and (max-width: 810px) {
   .mebel {
-    &__content{
+    &__content {
       font-size: 14px;
     }
   }
 }
+
 @media screen and (max-width: 510px) {
   .mebel {
-    &__content{
-      &-title{
+    &__content {
+      &-title {
         font-size: 15px;
       }
     }
   }
 }
+
 //mebel end
+
+//maslo start
+.maslo {
+  padding: 35px 0;
+
+  &__content {
+    font-size: 13px;
+    color: #646363;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+
+    .maslo {
+      float: left;
+      margin: 17px;
+    }
+
+    .brash {
+      height: 300px;
+      width: 300px;
+      padding: 20px 0;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    ul {
+      text-align: left;
+    }
+
+    li {
+      margin-top: 13px;
+      list-style-type: circle;
+
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 15px 0 15px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .maslo {
+    &__content {
+     width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .maslo {
+    padding: 10px 0;
+    &__content {
+      text-align: center;
+
+      .maslo {
+        float: none;
+        margin: auto;
+        padding: 14px 0;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+
+  }
+}
+
+//maslo end
