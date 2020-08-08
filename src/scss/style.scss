@@ -1,7 +1,7 @@
 @import "ourworks";
 
 body {
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   background-color: #f1f1f1;
 }
 
@@ -97,7 +97,7 @@ a {
       margin: 4px 0 7px 0;
     }
 
-    .phone, .viber, .telegram {
+    .phone, .whatsapp, .telegram {
       align-items: center;
       cursor: pointer;
 
@@ -324,8 +324,8 @@ nav a {
     left: 25%;
     z-index: 100;
     opacity: 0;
-    animation: cont 15s forwards;
-    animation-delay: 3s;
+    animation: cont 10s forwards;
+    animation-delay: 1s;
     background: rgba(255, 255, 255, 0.2);
     padding: 22px;
     font-size: 23px;
@@ -408,7 +408,7 @@ nav a {
     .content {
       left: 1%;
       right: 1%;
-      top: 1%;
+
     }
   }
 }
@@ -416,8 +416,7 @@ nav a {
 @media screen and (max-width: 700px) {
   .home {
     .content {
-      color: black;
-      animation: cont 10s forwards;
+      animation: cont 4s forwards;
     }
 
     &::after {
@@ -431,14 +430,17 @@ nav a {
 
     .content {
       text-align: center;
-      color: black;
+      left: 1%;
+      right: 1%;
+
+      top: 1%;
 
       h1 {
-        font-size: 20px;
+        font-size: 30px;
       }
 
       &__list {
-        font-size: 15px;
+        font-size: 17px;
         text-align: left;
       }
 
@@ -457,10 +459,31 @@ nav a {
 .best {
   margin-top: 40px;
   background-color: #ffffff;
+  &__plusi{
+    color: #999;
+    max-width: 890px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 25px 0;
 
+    &-item{
+      font-size: 25px;
+      padding-left: 35px;
+      text-align: center ;
+      margin-top: 20px;
+      p{
+        padding-top: 10px;
+      }
+    }
+  }
   &__title {
+    padding-top: 15px;
     text-align: center;
     font-size: 30px;
+    p{
+      font-size: 26px;
+      color: green;
+    }
   }
 
   .catalog__products {
@@ -472,6 +495,10 @@ nav a {
       &__content {
         position: absolute;
         bottom: 2em;
+        color: black;
+        p{
+          font-weight: 700;
+        }
       }
 
     }
@@ -482,23 +509,58 @@ nav a {
 @media screen and (max-width: 590px) {
   .best {
     margin-top: 0px;
-
+    &__plusi{
+      flex-wrap: wrap;
+      max-width: 590px;
+      padding: 0;
+      &-item{
+        padding: 0;
+        width: 50%;
+        font-size: 18px;
+      }
+    }
     &__title {
       text-align: center;
       font-size: 21px;
+      p{
+        font-size: 20px;
+      }
     }
 
     .catalog__products {
       .product {
         width: 140px;
 
+
         &__content {
+          color: #000000;
           font-size: 15px;
           bottom: 1em;
+          p{
+            font-weight: 700;
+          }
         }
       }
     }
 
+  }
+}
+@media screen and (max-width: 490px) {
+  .best{
+    &__plusi{
+      &-item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #f1f1f1;
+        padding: 7px 0;
+        margin-top: 10px;
+        p{
+          padding-left:  20px;
+        }
+
+      }
+    }
   }
 }
 
@@ -556,9 +618,11 @@ nav a {
       &__content {
         position: absolute;
         font-size: 27px;
-        color: #fff;
         bottom: 10px;
         left: 10px;
+        p{
+          font-weight: 700;
+        }
       }
     }
   }
@@ -580,7 +644,7 @@ nav a {
   }
 
   p {
-    font-size: 15px;
+    font-size: 22px;
     line-height: 26px;
   }
 }
@@ -598,7 +662,8 @@ nav a {
         width: 140px;
 
         &__content {
-          font-size: 15px;
+
+          font-size: 18px;
           bottom: 1em;
         }
       }
@@ -1280,7 +1345,7 @@ nav a {
         }
       }
 
-      .viber {
+      .whatsapp {
         i {
           padding-right: 15px;
         }
@@ -1653,6 +1718,7 @@ nav a {
   }
 
   h4 {
+    padding-top: 15px;
     text-align: center;
     margin-bottom: 15px;
   }

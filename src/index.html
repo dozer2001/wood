@@ -8,6 +8,7 @@
     <title>wood</title>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;1,600;1,700&display=swap"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 
@@ -28,14 +29,14 @@
         <div class="contacts">
             <div class="phone d-flex">
                 <a href="tel:+89778068861" class="d-flex">
-                    <i class="fas fa-phone-volume animate__animated animate__jello animate__infinite  "></i>
+                    <i class="fas fa-phone-volume  "></i>
                     <p class="tel "> +8(977)806-88-61</p>
                 </a>
 
             </div>
-            <div class="viber d-flex">
+            <div class="whatsapp d-flex">
                 <a href="viber://chat?number=+89778068861" class="d-flex">
-                    <i class="fab fa-viber fa-phone-volume animate__animated animate__jello animate__infinite"></i>
+                    <i class="fab fa-whatsapp"></i>
                     <p class="vib">+8(977)806-88-61</p>
                 </a>
 
@@ -50,23 +51,23 @@
             <ul class="topmenu">
                 <li class=""><a href="../index.html">Главная</a></li>
                 <li><a href="pages/ourworks.html">Наши работы</a></li>
-                <li><a href="../index.html">Каталог</a>
+                <li><a href="#catalog">Каталог</a>
                     <ul class="submenu">
-                        <li><a href="vagonka.html">Вагонка</a></li>
-                        <li><a href="kedr.html"> Продукция из кедра</a></li>
-                        <li><a href="sosna.html">Ангарская сосна</a></li>
-                        <li><a href="imitaciya_brusa.html">Имитация бруса</a></li>
-                        <li><a href="block_hous.html">Блок хаус</a></li>
-                        <li><a href="doska_pola.html">Доска пола</a></li>
-                        <li><a href="palubnaya_doska.html">Палубная доска</a></li>
-                        <li><a href="terrasnaya_doska.html">Террасная доска</a></li>
-                        <li><a href="planken.html">Планкен</a></li>
-                        <li><a href="product_sosna.html">Продуция из сосны</a></li>
-                        <li><a href="obreznaya_doska.html">Обрезная доска</a></li>
-                        <li><a href="brus_stryganii.html">Брус струганный</a></li>
-                        <li><a href="kleyanii_brus.html">Клееный брус</a></li>
-                        <li><a href="lestnici.html">Все для лестниц</a></li>
-                        <li><a href="banya.html">Все для бани</a></li>
+                        <li><a href="pages/vagonka.html">Вагонка</a></li>
+                        <li><a href="pages/kedr.html"> Продукция из кедра</a></li>
+                        <li><a href="pages/sosna.html">Ангарская сосна</a></li>
+                        <li><a href="pages/imitaciya_brusa.html">Имитация бруса</a></li>
+                        <li><a href="pages/block_hous.html">Блок хаус</a></li>
+                        <li><a href="pages/doska_pola.html">Доска пола</a></li>
+                        <li><a href="pages/palubnaya_doska.html">Палубная доска</a></li>
+                        <li><a href="pages/terrasnaya_doska.html">Террасная доска</a></li>
+                        <li><a href="pages/planken.html">Планкен</a></li>
+                        <li><a href="pages/product_sosna.html">Продуция из сосны</a></li>
+                        <li><a href="pages/obreznaya_doska.html">Обрезная доска</a></li>
+                        <li><a href="pages/brus_stryganii.html">Брус струганный</a></li>
+                        <li><a href="pages/kleyanii_brus.html">Клееный брус</a></li>
+                        <li><a href="pages/lestnici.html">Все для лестниц</a></li>
+                        <li><a href="pages/banya.html">Все для бани</a></li>
                     </ul>
                 </li>
                 <li><a href="pages/o_nas.html">О нас</a></li>
@@ -105,8 +106,27 @@
 
 <section class="best">
 <div class="container">
+    <div class="best__plusi d-flex">
+        <div class="best__plusi-item">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Лучшие цены</p>
+        </div>
+        <div class="best__plusi-item ">
+            <i class="fas fa-truck" aria-hidden="true"></i>
+            <p>Доставка</p>
+        </div>
+        <div class="best__plusi-item ">
+            <i class="fas fa-medal"></i>
+            <p>Качественный материал</p>
+        </div>
+        <div class="best__plusi-item">
+            <i class="far fa-check-circle"></i>
+            <p>Ассортимент в наличии на складе</p>
+        </div>
+    </div>
     <div class="best__title">
         <h3>Декоротивные решения для Вашего дома</h3>
+        <p>Лучшие цены по Москве</p>
     </div>
     <div class="catalog__products d-flex">
         <div class="product">
@@ -152,7 +172,7 @@
     </div>
 </div>
 </section>
-<section class="catalog">
+<section class="catalog" id="catalog">
     <div class="container">
         <div class="title">
             <h3> Каталог продукции</h3>
@@ -313,7 +333,7 @@
         </div>
         <div class="info d-flex">
             <i class="fas fa-info"></i>
-            <p>Центр столярных услуг “Tut Les ”выполняет все работы по дереву: распил, фигурный раскрой, стыкование,
+            <p>Центр столярных услуг “Eco-DecorWood” выполняет все работы по дереву: распил, фигурный раскрой, стыкование,
                 снятие фасок (кромок),
                 браширование, шлифовка, лакирование, тонирование, отделка маслом, вощение, монтаж столярных изделий и
                 многое другое.</p>
@@ -364,7 +384,8 @@
 <section class="map">
         <div class="map__content">
             <div class="map__left">
-                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.487406%2C55.611648&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.487%252C55.612%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2520%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2520%25D0%259C%25D0%259A%25D0%2590%25D0%2594%252C%252041-%25D0%25B9%2520%25D0%25BA%25D0%25B8%25D0%25BB%25D0%25BE%25D0%25BC%25D0%25B5%25D1%2582%25D1%2580%252C%25204%25D1%25816&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">МКАД, 41-й километр, 4с6 на карте Москвы — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQlYVhftC" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>            </div>
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ua/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ua/maps/213/moscow/?from=api-maps&ll=37.487629%2C55.611463&origin=jsapi21&utm_medium=mapframe&utm_source=maps&z=18.24" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс.Карты</a><iframe src="https://yandex.ua/map-widget/v1/-/CCQpb6TOwA" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
             <div class="map__right d-flex">
                 <div class="forma">
                     <strong>Заказать пиломатериалы</strong>
@@ -444,9 +465,9 @@
                 </a>
 
             </div>
-            <div class="viber d-flex">
-                <a href="viber://chat?number=+89778068861" class="d-flex">
-                    <i class="fab fa-viber fa-phone-volume animate__animated animate__jello animate__infinite"></i>
+            <div class="whatsapp d-flex">
+                <a href="href=intent://send/+89778068861#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" class="d-flex">
+                    <i class="fab fa-whatsapp fa-phone-volume animate__animated animate__jello animate__infinite"></i>
                     <p class="vib">+8(977)806-88-61</p>
                 </a>
             </div>
