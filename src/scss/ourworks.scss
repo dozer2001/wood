@@ -24,15 +24,10 @@ body {
   }
 
   .slider__item:focus {
-    border: none;
+    outline: none;
   }
 
   .myslider {
-    img {
-      width: 500px;
-      height: 500px;
-    }
-
     &__content {
       margin-left: 40px;
     }
@@ -58,6 +53,14 @@ body {
     -webkit-box-shadow: 0.4em 0.4em 36px rgba(122, 122, 122, .71);
     box-shadow: 0.4em 0.4em 36px rgba(122, 122, 122, .71);
     padding: 20px 0;
+    &__item{
+      height: 350px;
+      width: 350px;
+    }
+    img {
+      max-width: 100%;
+      height: 348px;
+    }
 
     &__content {
       max-width: 300px;
@@ -79,12 +82,14 @@ body {
     padding: 20px 0;
 
     &__item {
-      justify-content: center;
+
+      max-height: 350px;
+      margin-left: 30px;
     }
 
     &__item img {
-      max-height: 200px;
-      max-width: 200px;
+      width: 100%;
+      max-height: 300px;
     }
 
     .slick-arrow {
@@ -107,7 +112,7 @@ body {
       justify-content: center;
 
       li {
-        margin: 0 10px;
+        margin: 0 5px;
       }
 
       .slick-active {

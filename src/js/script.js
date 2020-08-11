@@ -7,15 +7,18 @@ $('.slider__big').slick({
     adaptiveHeight: true,
     slidesToScroll: 1,
     fade: false,
+    focusOnSelect:true,
     asNavFor:'.slider'
 });
 $('.slider').slick({
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
     adaptiveHeight: true,
     slidesToScroll: 1,
+    focusOnSelect:true,
     asNavFor:'.slider__big'
 });
 $('.slider__potolok').slick({
@@ -29,7 +32,16 @@ $('.slider__potolok').slick({
     fade: false,
 });
 
-
+$('.slider__works').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    slidesToScroll: 1,
+    fade: false,
+});
 
 
 
