@@ -491,6 +491,8 @@ nav a {
 
     .product {
       min-width: 20%;
+      width: 350px;
+      height: 350px;
 
       &__content {
         position: absolute;
@@ -506,7 +508,20 @@ nav a {
   }
 }
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 760px) {
+  .best {
+
+
+    .catalog__products {
+      .product {
+        width: 250px;
+        height: 250px;
+
+      }
+
+    }
+  }
+}@media screen and (max-width: 590px) {
   .best {
     margin-top: 0px;
     &__plusi{
@@ -530,6 +545,7 @@ nav a {
     .catalog__products {
       .product {
         width: 140px;
+        height: 140px;
 
 
         &__content {
@@ -1608,6 +1624,7 @@ nav a {
     .content-clients {
       font-weight: 700;
       margin: 20px 0;
+      text-align: center;
     }
 
     .slider__potolok {
@@ -1715,6 +1732,7 @@ nav a {
 
   .content-clients {
     font-weight: 700;
+    text-align: center;
   }
 
   h4 {
@@ -1815,15 +1833,21 @@ nav a {
   padding: 35px 0;
 
   &__content {
-    font-size: 13px;
+    font-size: 20px;
     color: #646363;
     width: 900px;
     margin: 0 auto;
     text-align: center;
+    &-first__img{
+      align-items: center;
 
+      .card__top-content-akcii{
+        margin-left: 20px;
+      }
+    }
     .maslo {
-      float: left;
       margin: 17px;
+
     }
 
     .brash {
@@ -1841,7 +1865,7 @@ nav a {
     }
 
     li {
-      margin-top: 13px;
+
       list-style-type: circle;
 
     }
@@ -1866,9 +1890,13 @@ nav a {
     padding: 10px 0;
     &__content {
       text-align: center;
-
+      font-size: 16px;
+      &-first__img{
+        img{
+         height: 200px;
+        }
+      }
       .maslo {
-        float: none;
         margin: auto;
         padding: 14px 0;
       }
