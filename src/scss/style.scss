@@ -459,28 +459,32 @@ nav a {
 .best {
   margin-top: 40px;
   background-color: #ffffff;
-  &__plusi{
+
+  &__plusi {
     color: #999;
     max-width: 890px;
     margin: 0 auto;
     justify-content: space-around;
     padding: 25px 0;
 
-    &-item{
+    &-item {
       font-size: 25px;
       padding-left: 35px;
-      text-align: center ;
+      text-align: center;
       margin-top: 20px;
-      p{
+
+      p {
         padding-top: 10px;
       }
     }
   }
+
   &__title {
     padding-top: 15px;
     text-align: center;
     font-size: 30px;
-    p{
+
+    p {
       font-size: 26px;
       color: green;
     }
@@ -495,12 +499,10 @@ nav a {
       height: 350px;
 
       &__content {
-        position: absolute;
-        bottom: 2em;
-        color: black;
-        p{
-          font-weight: 700;
-        }
+        position: inherit;
+        padding-top: 10px;
+        font-size: 32px;
+        font-weight: 700;
       }
 
     }
@@ -508,36 +510,48 @@ nav a {
   }
 }
 
+@media screen and (max-width: 1170px) {
+  .best {
+    .catalog__products {
+      .product {
+        margin-bottom: 8%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 760px) {
   .best {
-
-
     .catalog__products {
       .product {
         width: 250px;
         height: 250px;
-
       }
-
     }
   }
-}@media screen and (max-width: 590px) {
+}
+
+@media screen and (max-width: 590px) {
   .best {
     margin-top: 0px;
-    &__plusi{
+
+    &__plusi {
       flex-wrap: wrap;
       max-width: 590px;
       padding: 0;
-      &-item{
+
+      &-item {
         padding: 0;
         width: 50%;
         font-size: 18px;
       }
     }
+
     &__title {
       text-align: center;
       font-size: 21px;
-      p{
+
+      p {
         font-size: 20px;
       }
     }
@@ -550,9 +564,9 @@ nav a {
 
         &__content {
           color: #000000;
-          font-size: 15px;
-          bottom: 1em;
-          p{
+          font-size: 20px;
+
+          p {
             font-weight: 700;
           }
         }
@@ -561,20 +575,31 @@ nav a {
 
   }
 }
+
 @media screen and (max-width: 490px) {
-  .best{
-    &__plusi{
-      &-item{
+  .best {
+    .catalog__products {
+      .product {
+        margin-bottom: 11%;
+
+        &__content {
+          font-size: 17px;
+          padding: 0;
+        }
+      }
+    }
+    &__plusi {
+      &-item {
         width: 100%;
         display: flex;
         align-items: center;
         background-color: #f1f1f1;
         padding: 7px 0;
         margin-top: 10px;
-        p{
-          padding-left:  20px;
-        }
 
+        p {
+          padding-left: 20px;
+        }
       }
     }
   }
@@ -604,9 +629,8 @@ nav a {
     flex-wrap: wrap;
 
     .product {
-
       position: relative;
-      min-width: 25%;
+      min-width: 20%;
       display: inline-block;
       margin-right: 1%;
       margin-bottom: 4%;
@@ -614,6 +638,12 @@ nav a {
       cursor: pointer;
       box-shadow: 0.6em 1.4em 7px rgba(122, 122, 122, .71);
       transition: all 2s ease;
+
+      &__content {
+        margin-top: 10px;
+        font-size: 32px;
+        position: initial;
+      }
 
       a {
         display: block;
@@ -636,7 +666,8 @@ nav a {
         font-size: 27px;
         bottom: 10px;
         left: 10px;
-        p{
+
+        p {
           font-weight: 700;
         }
       }
@@ -680,7 +711,7 @@ nav a {
         &__content {
 
           font-size: 18px;
-          bottom: 1em;
+          bottom: 0em;
         }
       }
     }
@@ -1577,17 +1608,18 @@ nav a {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 900px) {
-  .popup-content{
+  .popup-content {
     width: 228px;
   }
-  .popup-close{
+  .popup-close {
     font-size: 3rem;
   }
-  .form{
+  .form {
     font-size: 15px;
   }
-  .popup-design .button-order{
+  .popup-design .button-order {
     margin: 0;
     padding: 0.5rem;
   }
@@ -1838,13 +1870,15 @@ nav a {
     width: 900px;
     margin: 0 auto;
     text-align: center;
-    &-first__img{
+
+    &-first__img {
       align-items: center;
 
-      .card__top-content-akcii{
+      .card__top-content-akcii {
         margin-left: 20px;
       }
     }
+
     .maslo {
       margin: 17px;
 
@@ -1880,7 +1914,7 @@ nav a {
 @media screen and (max-width: 900px) {
   .maslo {
     &__content {
-     width: auto;
+      width: auto;
     }
   }
 }
@@ -1888,14 +1922,17 @@ nav a {
 @media screen and (max-width: 450px) {
   .maslo {
     padding: 10px 0;
+
     &__content {
       text-align: center;
       font-size: 16px;
-      &-first__img{
-        img{
-         height: 200px;
+
+      &-first__img {
+        img {
+          height: 200px;
         }
       }
+
       .maslo {
         margin: auto;
         padding: 14px 0;
@@ -1910,3 +1947,19 @@ nav a {
 }
 
 //maslo end
+
+//decorreiki start
+.decorreiki {
+  ul {
+    font-size: 20px;
+    margin: 0 10px;
+
+    li {
+      list-style-type: disc;
+      margin-top: 5px;
+    }
+
+  }
+}
+
+//decorreiki end
