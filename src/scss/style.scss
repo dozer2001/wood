@@ -498,6 +498,10 @@ nav a {
       width: 350px;
       height: 350px;
 
+      img {
+        height: 350px;
+      }
+
       &__content {
         position: inherit;
         padding-top: 10px;
@@ -526,6 +530,11 @@ nav a {
       .product {
         width: 250px;
         height: 250px;
+
+        img {
+          height: 250px;
+
+        }
       }
     }
   }
@@ -560,7 +569,10 @@ nav a {
       .product {
         width: 140px;
         height: 140px;
+        img {
+          height: 140px;
 
+        }
 
         &__content {
           color: #000000;
@@ -588,6 +600,7 @@ nav a {
         }
       }
     }
+
     &__plusi {
       &-item {
         width: 100%;
